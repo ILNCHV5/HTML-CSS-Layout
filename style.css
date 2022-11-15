@@ -247,6 +247,7 @@
     display: grid;
     grid-template-columns: auto auto;
     gap: 2rem;
+    overflow: hidden;
 }
 
 .brandsSectionImages img {
@@ -255,29 +256,33 @@
     height: 18rem;
 }
 
-@media only screen and (max-width: 1080px) {
 
+
+@media only screen and (max-width: 1080px) {
     .brandsSection {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
     }
-
     .brandsSectionImages {
         margin-top: 4rem;
     }
-
+    .brandsSectionImages img{
+        width: 20;
+    }
 }
 
-@media only screen and (max-width: 720px) {
-    .brandsSectionImages {
+@media only screen and (max-width: 720px) { 
+    .brandsSectionImages{
+        justify-content: space-between;
         width: 100vw;
+        max-width: 100vw;
         gap: 1rem;
     }
-
-    .brandsSectionImages img {
-        width: 20rem;
+    .brandsSectionImages img{
+        width: 100%;
+        height: 100%;
     }
-
 }
 
 
