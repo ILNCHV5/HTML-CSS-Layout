@@ -259,6 +259,7 @@
 
     .brandsSection {
         flex-direction: column;
+        align-items: center;
     }
 
     .brandsSectionImages {
